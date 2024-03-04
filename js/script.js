@@ -39,3 +39,15 @@
 // строгое сранвение
 // console.log(2*4 == "8"); // == true даже строку и число 
 // console.log(2*4 === "8"); // === false строка не является числом NaN
+
+// пример сравнений
+// Выполняется ли условие?
+// const hamburger = 3;
+// const fries = 3;
+// const cola = 0;
+// const nuggets = 2;
+
+
+// if (hamburger === 3 && cola || fries === 3 && nuggets) {
+// 	console.log("Done!");
+// }
