@@ -51,3 +51,44 @@
 // if (hamburger === 3 && cola || fries === 3 && nuggets) {
 // 	console.log("Done!");
 // }
+
+
+
+// Drawing with for..
+//    *
+//   ***
+//  *****
+// *******
+//*********
+
+const lineStars = 6;
+const plusStars = 2;
+let result = "";
+let startStars = 1;
+
+for (let i = lineStars; i >= 2; i--) {
+	 
+	for (let space = 0; space < i; space++) {
+		
+		result += " ";
+
+		if(space === (i-2)){
+			
+			
+			for (let s = 0; s < startStars; s++) {
+				result += "*";
+			}
+			result += "\n";
+			startStars += plusStars;
+
+			break;
+		} 
+	}
+
+	
+}
+for (let s = 0; s < startStars; s++) {
+	result += "*";
+}
+result += "\n";
+console.log(result);
