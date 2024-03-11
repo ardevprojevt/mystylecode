@@ -61,34 +61,58 @@
 // *******
 //*********
 
-const lineStars = 6;
-const plusStars = 2;
-let result = "";
-let startStars = 1;
+// const lineStars = 6;
+// const plusStars = 2;
+// let result = "";
+// let startStars = 1;
 
-for (let i = lineStars; i >= 2; i--) {
+// for (let i = lineStars; i >= 2; i--) {
 	 
-	for (let space = 0; space < i; space++) {
+// 	for (let space = 0; space < i; space++) {
 		
-		result += " ";
+// 		result += " ";
 
-		if(space === (i-2)){
+// 		if(space === (i-2)){
 			
 			
-			for (let s = 0; s < startStars; s++) {
-				result += "*";
-			}
-			result += "\n";
-			startStars += plusStars;
+// 			for (let s = 0; s < startStars; s++) {
+// 				result += "*";
+// 			}
+// 			result += "\n";
+// 			startStars += plusStars;
 
-			break;
-		} 
-	}
+// 			break;
+// 		} 
+// 	}
 
 	
-}
-for (let s = 0; s < startStars; s++) {
-	result += "*";
-}
-result += "\n";
-console.log(result);
+// }
+// for (let s = 0; s < startStars; s++) {
+// 	result += "*";
+// }
+// result += "\n";
+// console.log(result);
+
+
+// // Место для третьей задачи
+// function getMathResult(a, b) {
+// 	if(typeof(b) == "number" && b > 0){
+// 		let plusnum = a; 
+// 		let res = "";
+		
+// 		for (var i = 0; i < b; i++) {
+			
+// 			if(i != b-1){
+// 				res += plusnum + "---";
+// 			}else{
+// 				res += plusnum;
+// 			}
+// 			plusnum += a;           
+// 		}
+// 		return res;
+// 	}else{
+// 		return a;
+// 	}
+// }
+
+// console.log( getMathResult(5, 3) );
