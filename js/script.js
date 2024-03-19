@@ -223,3 +223,15 @@ const clone = Object.assign({}, add);
 clone.a = 2;
 console.log(add);
 console.log(clone);
+
+// клонировать массив Spred operator
+const arr = [1,23,45];
+const newArr = arr.slice();
+newArr[0] = 33;
+console.log(arr);
+console.log(newArr);
+
+const video  = ['youtube', 'rutube'],
+      blogs  = ['wp', 'lj', 'blogger'],
+      allarr = [...video, ...blogs, 'vk', 'fb'];
+console.log(allarr);
