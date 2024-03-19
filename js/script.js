@@ -156,3 +156,70 @@ function done() {
 }
 
 learnJS("JavaScript", done);
+
+// Объекты, деструктуризация объектов (ES6)
+
+const options = {
+	name: "test",
+	width: 1024,
+	height: 1024,
+	colors: {
+		border: "black",
+		bg: "red"
+	},
+	makeTest: function () {
+		console.log("Test");
+	}
+};
+
+const {border, bg} = options.colors;
+
+console.log(border);
+
+options.makeTest();
+console.log(Object.keys(options).length);
+
+console.log(options.name);
+delete options.name;
+console.log(options);
+
+//for (let key of options) of не может работать с объектами 
+let counter = 0;
+for (let key in options) {
+	if (typeof(options[key]) === "object"){
+		for (let i in options[key]){
+		    console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+		}
+		
+	}else{
+		console.log(`${key} имеет значние ${options[key]}`);
+	}
+
+	counter++;
+	
+}
+
+console.log(counter);
+
+const arr = [2,13,16,24,9,10];
+
+const str = "1,12,25,2,5,45";
+const prod = str.split(", ");
+console.log(prod.join(";"));
+
+arr.sort(compareNum);
+console.log(arr); 
+function compareNum(a, b){
+	return a - b;
+}
+
+// Передача по ссылке или по значению, Spread оператор (ES6-ES9)
+const add = {
+	a: 1,
+	b: 2
+};
+
+const clone = Object.assign({}, add);
+clone.a = 2;
+console.log(add);
+console.log(clone);
